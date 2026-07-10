@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://5hshu0plvdr4"]
+
+[ext_resource type="Script" uid="uid://cf10vmdd1g36q" path="res://Scripts/item_shishkin.gd" id="1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jim7k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7dixu"]
+
+[node name="Item_Shishkin" type="Area3D" unique_id=349252606]
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1848203818]
+shape = SubResource("SphereShape3D_jim7k")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1403056781]
+light_energy = 1.5
+omni_range = 2.0
+
+[node name="MeshHolder" type="MeshInstance3D" parent="." unique_id=1312487123]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+mesh = SubResource("BoxMesh_7dixu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

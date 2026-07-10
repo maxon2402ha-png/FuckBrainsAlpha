@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://diadranp8hn8g"]
+
+[ext_resource type="Script" uid="uid://cb2iyyhg2kmhe" path="res://Scripts/stairs.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cexlwaldp7b1v" path="res://Assets/Models/GLB format/stairs.glb" id="2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_idtik"]
+size = Vector3(3, 2, 1)
+
+[node name="Stairs" type="Area3D" unique_id=968012796]
+script = ExtResource("1")
+
+[node name="stairs" parent="." unique_id=865624378 instance=ExtResource("2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=825231003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -5)
+shape = SubResource("BoxShape3D_idtik")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

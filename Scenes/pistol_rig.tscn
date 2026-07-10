@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cngt32hobhmyc"]
+
+[ext_resource type="PackedScene" uid="uid://crxyoioalqi1b" path="res://Assets/Weapon/pistol_GLTF/scene.gltf" id="1"]
+[ext_resource type="Script" uid="uid://bith8rpf5e4tl" path="res://Scripts/weapon_fixer.gd" id="2"]
+
+[node name="Sketchfab_Scene" unique_id=1544861306 instance=ExtResource("1")]
+script = ExtResource("2")

@@ -1,0 +1,367 @@
+[gd_scene format=3 uid="uid://c85rh185il5mx"]
+
+[node name="SettingsPanel" type="Panel" unique_id=1295680549]
+process_mode = 3
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1498882663]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 100
+
+[node name="MainVBox" type="VBoxContainer" parent="Margin" unique_id=1221310208]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Title" type="Label" parent="Margin/MainVBox" unique_id=2070197098]
+layout_mode = 2
+text = "НАСТРОЙКИ"
+
+[node name="TabContainer" type="TabContainer" parent="Margin/MainVBox" unique_id=241544621]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Игра" type="MarginContainer" parent="Margin/MainVBox/TabContainer" unique_id=64421150]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+metadata/_tab_index = 0
+
+[node name="VBox" type="VBoxContainer" parent="Margin/MainVBox/TabContainer/Игра" unique_id=799635649]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SensRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Игра/VBox" unique_id=2115986305]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Игра/VBox/SensRow" unique_id=942791231]
+layout_mode = 2
+text = "Чувствительность мыши:"
+
+[node name="SensSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Игра/VBox/SensRow" unique_id=537171817]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.001
+max_value = 0.02
+step = 0.001
+value = 0.001
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Игра/VBox/SensRow" unique_id=970857286]
+layout_mode = 2
+text = "0.003"
+
+[node name="Прицел" type="MarginContainer" parent="Margin/MainVBox/TabContainer" unique_id=1638419957]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VBox" type="VBoxContainer" parent="Margin/MainVBox/TabContainer/Прицел" unique_id=969196604]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="ColorRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Прицел/VBox" unique_id=1357289567]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/ColorRow" unique_id=1248248857]
+layout_mode = 2
+text = "Цвет прицела:"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="Margin/MainVBox/TabContainer/Прицел/VBox/ColorRow" unique_id=784171777]
+layout_mode = 2
+
+[node name="LengthRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Прицел/VBox" unique_id=1072196628]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/LengthRow" unique_id=893473131]
+layout_mode = 2
+text = "Длина линий:"
+
+[node name="LengthSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Прицел/VBox/LengthRow" unique_id=800227854]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 2.0
+max_value = 50.0
+value = 2.0
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/LengthRow" unique_id=1963672195]
+layout_mode = 2
+text = "10.0"
+
+[node name="GapRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Прицел/VBox" unique_id=1518407599]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/GapRow" unique_id=1196005234]
+layout_mode = 2
+text = "Размер зазора:"
+
+[node name="GapSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Прицел/VBox/GapRow" unique_id=1755114771]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 10.0
+value = 1.0
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/GapRow" unique_id=773488623]
+layout_mode = 2
+text = "5.0"
+
+[node name="ThicknessRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Прицел/VBox" unique_id=808194437]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/ThicknessRow" unique_id=1770858731]
+layout_mode = 2
+text = "Толщина линий:"
+
+[node name="ThicknessSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Прицел/VBox/ThicknessRow" unique_id=502252683]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 2.0
+max_value = 50.0
+value = 2.0
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Прицел/VBox/ThicknessRow" unique_id=1402754070]
+layout_mode = 2
+text = "10.0"
+
+[node name="PreviewBG" type="ColorRect" parent="Margin/MainVBox/TabContainer/Прицел/VBox" unique_id=1315545652]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0.3614921, 0.35213906, 0.335712, 1)
+
+[node name="CrosshairPreview" type="Control" parent="Margin/MainVBox/TabContainer/Прицел/VBox/PreviewBG" unique_id=203671299]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Управление" type="MarginContainer" parent="Margin/MainVBox/TabContainer" unique_id=872487857]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Margin/MainVBox/TabContainer/Управление" unique_id=1518981293]
+layout_mode = 2
+
+[node name="BindList" type="VBoxContainer" parent="Margin/MainVBox/TabContainer/Управление/ScrollContainer" unique_id=1652941829]
+layout_mode = 2
+
+[node name="Звук" type="MarginContainer" parent="Margin/MainVBox/TabContainer" unique_id=897912916]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="VBox" type="VBoxContainer" parent="Margin/MainVBox/TabContainer/Звук" unique_id=78770270]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="MasterRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Звук/VBox" unique_id=1034811663]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/MasterRow" unique_id=840550378]
+layout_mode = 2
+text = "Общая громкость:"
+
+[node name="MasterSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Звук/VBox/MasterRow" unique_id=52559618]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.001
+max_value = 1.0
+step = 0.01
+value = 0.001
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/MasterRow" unique_id=1270857149]
+layout_mode = 2
+text = "100%"
+
+[node name="MusicRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Звук/VBox" unique_id=1104809914]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/MusicRow" unique_id=736393369]
+layout_mode = 2
+text = "Музыка:"
+
+[node name="MusicSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Звук/VBox/MusicRow" unique_id=554823055]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.001
+max_value = 1.0
+step = 0.01
+value = 0.001
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/MusicRow" unique_id=1290642067]
+layout_mode = 2
+text = "0.003"
+
+[node name="SFXRow" type="HBoxContainer" parent="Margin/MainVBox/TabContainer/Звук/VBox" unique_id=1113262582]
+layout_mode = 2
+
+[node name="LabelName" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/SFXRow" unique_id=1321913141]
+layout_mode = 2
+text = "Эффекты:"
+
+[node name="SFXSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Звук/VBox/SFXRow" unique_id=24475198]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.001
+max_value = 1.0
+step = 0.01
+value = 0.001
+
+[node name="LabelValue" type="Label" parent="Margin/MainVBox/TabContainer/Звук/VBox/SFXRow" unique_id=133476094]
+layout_mode = 2
+text = "0.003"
+
+[node name="Настройки графики" type="MarginContainer" parent="Margin/MainVBox/TabContainer" unique_id=759179198]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 4
+
+[node name="GridContainer" type="GridContainer" parent="Margin/MainVBox/TabContainer/Настройки графики" unique_id=39147795]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="Label" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=457676283]
+layout_mode = 2
+text = "Разрешение:"
+
+[node name="ResOption" type="OptionButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=105097816]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1805761969]
+layout_mode = 2
+text = "Режим окна:
+"
+
+[node name="WindowOption" type="OptionButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1707401875]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=506177154]
+layout_mode = 2
+text = "Стиль VHS:"
+
+[node name="StyleOption" type="OptionButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=805020184]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label10" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=344155430]
+layout_mode = 2
+text = "Включить VHS фильтр"
+
+[node name="VHSToggle" type="CheckButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1347647771]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Label4" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=324825516]
+layout_mode = 2
+text = "Уровень шума:"
+
+[node name="NoiseSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=42770444]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 0.1
+step = 0.005
+
+[node name="Label5" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1448375598]
+layout_mode = 2
+text = "Раздвоение цветов (RGB):"
+
+[node name="RGBSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1010009608]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.5
+step = 0.05
+
+[node name="Label6" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=473012451]
+layout_mode = 2
+text = "Яркость"
+
+[node name="BrightnessSlider" type="HSlider" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=868571172]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Label7" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=678312911]
+layout_mode = 2
+text = "Сглаживание"
+
+[node name="AAOption" type="OptionButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1571462670]
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "Выкл"
+popup/item_0/id = 0
+popup/item_1/text = "FXAA"
+popup/item_1/id = 1
+popup/item_2/text = "MSAA 2x"
+popup/item_2/id = 2
+popup/item_3/text = "MSAA 4x"
+popup/item_3/id = 3
+popup/item_4/text = "MSAA 8x"
+popup/item_4/id = 4
+
+[node name="Label8" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1566043929]
+layout_mode = 2
+text = "Качество графики"
+
+[node name="QualityOption" type="OptionButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=2002442277]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Низкие"
+popup/item_0/id = 0
+popup/item_1/text = "Средние"
+popup/item_1/id = 1
+popup/item_2/text = "Высокие"
+popup/item_2/id = 2
+
+[node name="Label9" type="Label" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=715939466]
+layout_mode = 2
+text = "Вертикальная синхронизация (VSync)"
+
+[node name="VSyncCheck" type="CheckButton" parent="Margin/MainVBox/TabContainer/Настройки графики/GridContainer" unique_id=1491344296]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="CloseButton" type="Button" parent="Margin/MainVBox" unique_id=353343801]
+layout_mode = 2
+text = "ЗАКРЫТЬ И СОХРАНИТЬ"

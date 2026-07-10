@@ -1,0 +1,40 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://8dsrnpccw02r"
+path.s3tc="res://.godot/imported/tf2_medic_1.png-342c8a41a3cd927938350bcf0d020688.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "d795c2b28a11e94d3d07ef3b4c4a37c8"
+}
+
+[deps]
+
+source_file="res://Assets/Models/tf2_medic_1.png"
+dest_files=["res://.godot/imported/tf2_medic_1.png-342c8a41a3cd927938350bcf0d020688.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=1.0
+compress/uastc_level=2
+compress/rdo_quality_loss=0
+compress/hdr_compression=0
+compress/normal_map=0
+compress/channel_pack=1
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal=""
+process/fix_alpha_border=false
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

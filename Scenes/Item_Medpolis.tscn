@@ -1,0 +1,61 @@
+[gd_scene format=4 uid="uid://sq7emveh6yqn"]
+
+[ext_resource type="Script" uid="uid://5np85ae5apqi" path="res://Scripts/item_medpolis.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bwra4vbirfkje" path="res://Assets/Items/Polis/Polis_color.png" id="2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jim7k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajd41"]
+albedo_texture = ExtResource("2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ttemr"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jwg4f"]
+_surfaces = [{
+"aabb": AABB(-2.8587117, -0.09627151, -1.7332716, 5.7174234, 0.19254301, 3.4665432),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAEAAEAAgAFAAAAAwAAAAUAAgAEAAYABwAGAAQACAACAAYABwAIAAYABAAJAAcACAAHAAkAAwAJAAQAAwAFAAoACwAKAAUADAADAAoACwAMAAoABQANAAsADQAMAAsAAgANAAUADgADAAwADgAJAAMADQAPAAwADgAMAA8ADwANABAADwAQAA4ADQACABEAEQACAAgADQASABAADgAQABIADQARABIACAAJABMAEQAIABMAEwAJABQAEwAUABEACQAVABQACQAOABUAFQARABQADgASABYAFQAOABYAEgARABcAFQAXABEAFgASABcAFgAXABUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("//8AAB8KAAAy/v//9wIAADL+AAD3AgAA/////x8KAADb+f//AAAAAP//AADf9QAA2/kAAAAAAAAjBv//AAAAACMGAAAAAAAAzAH///cCAAD/////3/UAADL+AAAH/QAAMv7//wf9AADb+QAA//8AACMG/////wAA2/n/////AAAjBgAA//8AAAAAAAAfCgAAzAEAAAf9AADMAQAA9wIAAAAA//8fCgAAAAD//9/1AADMAf//B/0AAAAAAADf9QAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_asrcd"]
+resource_name = "Polis_Cube"
+_surfaces = [{
+"aabb": AABB(-2.8587117, -0.09627151, -1.7332716, 5.7174234, 0.19254301, 3.4665432),
+"attribute_data": PackedByteArray("VvAjfRbtnX5W8J1+Fu0jfVbwnX4W7RaAVvAWgBbtnX4W7Uf/VvDN/Rbtzf1W8Ef/Fu3N/VbwVPwW7VT8VvDN/VbwWk0W7dNOVvDTThbtWk1W8NNOFu1MUFbwTFAW7dNOVvCLzBbtBM5W8ATOFu2LzFbwBM4W7X3PVvB9zxbtBM4W7YvMVvAWgBbtFoBW8IvMFu0jfVbwTFAW7UxQVvAjfbdnJ/urB1P84mRT/KsDU/jXBCf742hjWeNoU/jiZGJVt2eOVtcEjlarB2JVqwNjWUXUJ/s6dFP8cdFT/DlwU/hmcSf7cdVjWXHVU/hx0WJVRdSOVmZxjlY6dGJVOXBjWRbtWk1W8OUAFu3lAFbwWk0W7VT8VvB9zxbtfc9W8FT8"),
+"format": 34896613399,
+"index_count": 132,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkAKQArACwALQAoAC4ALwAoAC0AKwAoAC8ALwAtADAAKwAvADEAMQAvADIAKwAxADMANAA1ADYANAA3ADUANQA3ADgAOQA0ADoAOwA0ADkANwA0ADsAOwA5ADwANwA7AD0APQA7AD4ANwA9AD8AQABBAEIAQABDAEEARABFAEYARABHAEUA"),
+"material": SubResource("StandardMaterial3D_ttemr"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("//8AAB8K5SAy/v//9wLlIDL+AAD3AuUg/////x8K5SAy/gAA9wJGC9v5//8AAEYL2/kAAAAARgsy/v//9wJGCyMG/////3I+zAEAAAf9cj7MAf//B/1yPiMGAAD//3I+zAH//wf9NjMAAAAA3/U2MwAA///f9TYzzAEAAAf9NjPb+QAA//9yPjL+//8H/XI+Mv4AAAf9cj7b+f////9yPjL+AAAH/TYz/////9/1NjP//wAA3/U2MzL+//8H/TYzIwYAAAAARgvMAf//9wJGC8wBAAD3AkYLIwb//wAARgvMAQAA9wLlIAAA//8fCuUgAAAAAB8K5SDMAf//9wLlICMG//8AAAAA2/kAAAAAAADb+f//AAAAACMGAAAAAAAA/////x8Kqir//wAA3/WqKv/////f9aoq//8AAB8Kqioy/gAA9wKqKv//AADf9aoq//8AAB8Kqirb+QAA//+qKjL+AAAH/aoqIwYAAAAAqirb+QAAAACqKgAAAAAfCqoqzAEAAPcCqirMAQAAB/2qKgAAAADf9aoqIwYAAP//qirMAf//9wKqKgAA///f9aoqAAD//x8KqiojBv////+qKswB//8H/aoq2/n//wAAqiojBv//AACqKv////8fCqoqMv7///cCqioy/v//B/2qKv/////f9aoq2/n/////qirb+f//////PyMGAAD///8/Iwb//////z/b+QAA////PwAA///f9aoqAAAAAB8KqioAAP//HwqqKgAAAADf9aoq+K8GUPivBlD4rwZQ+K8GUDW6yUU1uslFNbrJRTW6yUXIbTaSyG02kshtNpLIbTaSZFuapGRbmqRkW5qkZFuapDaSyG02kshtNpLIbTaSyG2apGRbmqRkW5qkZFuapGRbyUU1uslFNbrJRTW6yUU1ugZQ+K8GUPivBlD4rwZQ+K//P/+//z//v/8//7//P/+/qqpUVaqqVFWqqlRVqqpUVVRVVFVVVVRVVFVUVVVVVFVVVVRVVVVUVVRVVFVVVVRVVVVUVVRVVFVUVVRVVFVUVVTVqipU1aoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoqVNWqKlTVqipU1aoqVNWqKv9//3//f/9//3//f/9//39UVaqqVFWqqlRVqqpUVaqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_jwg4f")
+
+[node name="Item_Medpolis" type="Area3D" unique_id=349252606]
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1848203818]
+shape = SubResource("SphereShape3D_jim7k")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1403056781]
+light_energy = 1.5
+omni_range = 2.0
+
+[node name="MeshHolder" type="Node3D" parent="." unique_id=1554393492]
+transform = Transform3D(0.09415176, 0.01469324, -0.030324163, -0.03369638, 0.04105469, -0.08472937, 0, 0.089992344, 0.043604802, 0, 0, 0)
+
+[node name="Cube" type="MeshInstance3D" parent="MeshHolder" unique_id=1280133964]
+transform = Transform3D(0.9989688, -0.039520565, -0.022772128, 0.042033482, 0.99111366, 0.12857848, 0.017164994, -0.12701094, 1.0104313, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ajd41")
+mesh = SubResource("ArrayMesh_asrcd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

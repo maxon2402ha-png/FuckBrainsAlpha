@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dkl6atjh4p3a3"]
+
+[ext_resource type="Script" uid="uid://dyja8g4e4asi3" path="res://Scripts/canvas_layer.gd" id="1"]
+[ext_resource type="Shader" uid="uid://bjfoetr2123r1" path="res://Shaders/vhs_horror.gdshader" id="2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5g7v7"]
+shader = ExtResource("2")
+shader_parameter/crt_curve = 0.02
+shader_parameter/lens_distortion = 0.4
+shader_parameter/overscan = 0.95
+shader_parameter/scanline_intensity = 0.1
+shader_parameter/scanline_count = 800.0
+shader_parameter/noise_intensity = 0.1
+shader_parameter/color_displacement = 0.1
+shader_parameter/vignette_intensity = 0.3
+shader_parameter/brightness = 1.05
+shader_parameter/effect_intensity = 1.0
+shader_parameter/vhs_tint = Vector3(1, 1, 1)
+shader_parameter/grayscale_mix = 0.0
+shader_parameter/black_level = 0.04
+
+[node name="VHS_PostProcessing" type="Node2D" unique_id=1778566036]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1484296202]
+layer = 10
+script = ExtResource("1")
+
+[node name="VHS_Effect" type="ColorRect" parent="CanvasLayer" unique_id=1731881106]
+material = SubResource("ShaderMaterial_5g7v7")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

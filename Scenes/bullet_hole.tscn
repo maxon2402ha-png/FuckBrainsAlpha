@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://mlbrb7c1pa6c"]
+
+[ext_resource type="Script" uid="uid://dbbpma0d50y0t" path="res://Scripts/bullet_hole.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ct8ko6uibdgdf" path="res://Assets/Decal/hole_texture.tres" id="2"]
+
+[node name="BulletHole" type="Node3D" unique_id=1691551343]
+script = ExtResource("1")
+
+[node name="Decal" type="Decal" parent="." unique_id=152835491]
+size = Vector3(0.2, 0.2, 0.2)
+texture_albedo = ExtResource("2")
+
+[node name="Timer" type="Timer" parent="." unique_id=1594850353]
+wait_time = 10.0
+autostart = true

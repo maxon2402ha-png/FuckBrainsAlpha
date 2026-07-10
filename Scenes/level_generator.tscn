@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://djams44civ8p0"]
+
+[ext_resource type="Script" uid="uid://dix2nquvex4w7" path="res://Scripts/level_generator.gd" id="1"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_v1bs1"]
+geometry_parsed_geometry_type = 1
+
+[sub_resource type="Environment" id="Environment_xgtxp"]
+ambient_light_color = Color(0.08235294, 0.09411765, 0.101960786, 1)
+tonemap_mode = 3
+tonemap_exposure = 1.2
+ssao_enabled = true
+ssao_intensity = 2.5
+glow_enabled = true
+glow_intensity = 0.8
+glow_bloom = 0.2
+glow_blend_mode = 2
+fog_enabled = true
+fog_light_color = Color(0.16428143, 0.18223977, 0.21018335, 1)
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.015
+volumetric_fog_albedo = Color(0.2901961, 0.32156864, 0.34901962, 1)
+
+[node name="LevelGenerator" type="Node3D" unique_id=279184309]
+script = ExtResource("1")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=482283556]
+navigation_mesh = SubResource("NavigationMesh_v1bs1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=482405536]
+environment = SubResource("Environment_xgtxp")

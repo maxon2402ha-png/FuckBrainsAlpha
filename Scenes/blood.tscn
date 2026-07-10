@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dem607ndyrli"]
+
+[ext_resource type="Script" uid="uid://dxgoijqn50sdb" path="res://Scripts/blood.gd" id="1"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xsima"]
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 3.0
+initial_velocity_max = 5.0
+scale_min = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rgh2v"]
+albedo_color = Color(0.72156864, 0.0627451, 0.015686275, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8amu8"]
+material = SubResource("StandardMaterial3D_rgh2v")
+size = Vector3(0.1, 0.1, 0.1)
+
+[node name="Blood" type="GPUParticles3D" unique_id=1943823878]
+emitting = false
+amount = 16
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_xsima")
+draw_pass_1 = SubResource("BoxMesh_8amu8")
+script = ExtResource("1")

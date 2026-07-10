@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bj786sgcj7fbk"]
+
+[ext_resource type="Script" uid="uid://clusd4srk4jt4" path="res://Scripts/npc_medic.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cj7oa027rtw6l" path="res://Assets/Models/tf2_medic.glb" id="2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_afpow"]
+height = 1.6121216
+
+[node name="npc_medic" type="CharacterBody3D" unique_id=1374401418 groups=["enemies"]]
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1907754063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.788175, 0)
+shape = SubResource("CapsuleShape3D_afpow")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1202919976]
+
+[node name="Timer" type="Timer" parent="." unique_id=815153006]
+wait_time = 1.5
+one_shot = true
+
+[node name="ZombieSound" type="AudioStreamPlayer3D" parent="." unique_id=627001155]
+max_distance = 10.0
+
+[node name="HeadTarget" type="Node3D" parent="." unique_id=666307818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4376539, 0)
+
+[node name="Sketchfab_Scene" parent="." unique_id=239531851 instance=ExtResource("2")]
+transform = Transform3D(-8, 0, -6.993822e-07, 0, 8, 0, 6.993822e-07, 0, -8, 0, 0, 0)

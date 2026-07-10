@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d8xu8gjos1qd"]
+
+[ext_resource type="Script" uid="uid://bmoisaq0myox" path="res://Scripts/blood_pool.gd" id="1"]
+[ext_resource type="Shader" uid="uid://d3l2mf2f78yvv" path="res://Shaders/blood_pool.gdshader" id="2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ok88t"]
+render_priority = 0
+next_pass = null
+shader = ExtResource("2")
+shader_parameter/blood_color = Color(0.4, 0.02, 0.02, 1)
+shader_parameter/growth = 0.1
+shader_parameter/edge_sharpness = 5.0
+shader_parameter/seed = 0.0
+
+[sub_resource type="PlaceholderMesh" id="PlaceholderMesh_wu1tb"]
+lightmap_size_hint = Vector2i(2, 2)
+
+[node name="blood_pool" type="Node3D" unique_id=1511972145]
+script = ExtResource("1")
+
+[node name="BloodMesh" type="MeshInstance3D" parent="." unique_id=1434543421]
+material_override = SubResource("ShaderMaterial_ok88t")
+mesh = SubResource("PlaceholderMesh_wu1tb")
